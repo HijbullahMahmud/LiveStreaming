@@ -406,8 +406,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         @DefaultRenderersFactory.ExtensionRendererMode int extensionRendererMode =
                 ((App) getApplication()).useExtensionRenderers()
-                        ? (true ? DefaultRenderersFactory.EXTENSION_RENDERER_MODE_PREFER
-                        : DefaultRenderersFactory.EXTENSION_RENDERER_MODE_ON)
+                        ? (DefaultRenderersFactory.EXTENSION_RENDERER_MODE_PREFER)
                         : DefaultRenderersFactory.EXTENSION_RENDERER_MODE_OFF;
 
         DefaultRenderersFactory renderersFactory = new DefaultRenderersFactory(this, null,
@@ -436,8 +435,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         playerView.setPlaybackPreparer(this);
 
         //mediaSource = buildMediaSource(Uri.parse("http://13.127.14.184/adaptive/bigbunny/playlist.m3u8"));
+        //star sports
         mediaSource = buildMediaSource(Uri.parse("http://103.58.73.26/streams/116/index.m3u8"));
-
+       
         player.prepare(mediaSource);
         updateButtonVisibilities();
         initBwd();
