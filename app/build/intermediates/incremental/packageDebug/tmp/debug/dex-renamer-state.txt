@@ -1,4 +1,4 @@
-#Fri Feb 22 16:39:08 IST 2019
-base.0=/Users/baps/medium_blog/AdaptiveExoplayer/app/build/intermediates/transforms/dexMerger/debug/0
+#Mon May 04 20:45:03 BDT 2020
+base.0=E\:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

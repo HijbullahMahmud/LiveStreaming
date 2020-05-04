@@ -7,9 +7,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 import android.util.Log;
 import android.util.Pair;
 import android.util.SparseArray;
@@ -24,6 +22,10 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.DefaultLoadControl;
@@ -227,6 +229,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
         releasePlayer();
         releaseAdsLoader();
         clearStartPosition();
@@ -347,11 +350,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             int orientation = display.getOrientation();
 
             if (orientation == Surface.ROTATION_90 || orientation == Surface.ROTATION_270) {
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
                 frameLayout.setLayoutParams(new LinearLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, 800));
 
             } else {
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
                 frameLayout.setLayoutParams(new LinearLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
             }
         } else if (view.getId() == R.id.tv_play_back_speed || view.getId() == R.id.tv_play_back_speed_symbol) {
@@ -432,7 +435,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         playerView.setPlayer(player);
         playerView.setPlaybackPreparer(this);
 
-        mediaSource = buildMediaSource(Uri.parse("http://13.127.14.184/adaptive/bigbunny/playlist.m3u8"));
+        //mediaSource = buildMediaSource(Uri.parse("http://13.127.14.184/adaptive/bigbunny/playlist.m3u8"));
+        mediaSource = buildMediaSource(Uri.parse("http://103.58.73.26/streams/116/index.m3u8"));
 
         player.prepare(mediaSource);
         updateButtonVisibilities();
