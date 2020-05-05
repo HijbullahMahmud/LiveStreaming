@@ -159,6 +159,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Formatter mFormatter;
 
 
+    //stream url
+    private String streamUrl = "";
+
 // Activity lifecycle
 
     private static boolean isBehindLiveWindow(ExoPlaybackException e) {
@@ -184,6 +187,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         setContentView(R.layout.activity_main);
+
+        //get url
+        streamUrl = getIntent().getStringExtra("streamUrl");
 
         frameLayout = (FrameLayout) findViewById(R.id.frame_layout_main);
         tvPlaybackSpeed = (TextView) findViewById(R.id.tv_play_back_speed);
@@ -436,8 +442,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //mediaSource = buildMediaSource(Uri.parse("http://13.127.14.184/adaptive/bigbunny/playlist.m3u8"));
         //star sports
-        mediaSource = buildMediaSource(Uri.parse("http://103.58.73.26/streams/116/index.m3u8"));
-       
+        //mediaSource = buildMediaSource(Uri.parse("http://103.58.73.26/streams/116/index.m3u8"));
+        mediaSource = buildMediaSource(Uri.parse(streamUrl));
+
         player.prepare(mediaSource);
         updateButtonVisibilities();
         initBwd();

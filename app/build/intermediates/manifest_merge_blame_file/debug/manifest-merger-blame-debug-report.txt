@@ -11,53 +11,62 @@
 9-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:5:5-66
+11-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:5:5-67
 11-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.android.exoplayer:exoplayer-core:2.9.3] C:\Users\user\.gradle\caches\transforms-2\files-2.1\db29ae0e4260df9bd01e8c59ef8df55e\jetified-exoplayer-core-2.9.3\AndroidManifest.xml:24:5-79
 12-->[com.google.android.exoplayer:exoplayer-core:2.9.3] C:\Users\user\.gradle\caches\transforms-2\files-2.1\db29ae0e4260df9bd01e8c59ef8df55e\jetified-exoplayer-core-2.9.3\AndroidManifest.xml:24:22-76
 13
 14    <application
-14-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:7:5-25:19
+14-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:7:5-32:19
 15        android:name="com.adaptive.exoplayer.App"
-15-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:14:9-28
+15-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:8:9-28
 16        android:allowBackup="true"
-16-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:8:9-35
+16-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:9:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\1cd7eff88f5e86d0249af2958bf465f0\core-1.1.0\AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.2.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\f4976fdf66a867c7fc93ada653134a06\core-1.2.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@mipmap/ic_launcher"
-19-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:9:9-43
+19-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:10:9-43
 20        android:label="@string/app_name"
-20-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:10:9-41
+20-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:11:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:11:9-54
+21-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:12:9-54
 22        android:supportsRtl="true"
-22-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:12:9-35
+22-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:13:9-35
 23        android:testOnly="true"
 24        android:theme="@style/AppTheme"
-24-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:15:9-40
+24-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:14:9-40
 25        android:usesCleartextTraffic="true" >
-25-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:13:9-44
+25-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:15:9-44
 26        <activity
-26-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:16:9-24:20
-27            android:name="com.adaptive.exoplayer.MainActivity"
-27-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:16:19-47
+26-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:17:9-25:20
+27            android:name="com.adaptive.exoplayer.HomeActivity"
+27-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:17:19-47
 28            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 28-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:18:13-106
 29            android:windowSoftInputMode="stateHidden" >
-29-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:17:13-54
+29-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:19:13-54
 30            <intent-filter>
-30-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:19:13-23:29
+30-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:20:9-24:25
 31                <action android:name="android.intent.action.MAIN" />
-31-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:20:17-69
-31-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:20:25-66
+31-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:21:13-65
+31-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:21:21-62
 32
 33                <category android:name="android.intent.category.LAUNCHER" />
-33-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:22:17-77
-33-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:22:27-74
+33-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:23:13-73
+33-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:23:23-70
 34            </intent-filter>
 35        </activity>
-36    </application>
-37
-38</manifest>
+36        <activity
+36-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:27:9-31:20
+37            android:name="com.adaptive.exoplayer.MainActivity"
+37-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:28:13-41
+38            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+38-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:29:13-106
+39            android:windowSoftInputMode="stateHidden" >
+39-->E:\Android Workspace\AdaptiveStreamingExoplayer\app\src\main\AndroidManifest.xml:30:13-54
+40        </activity>
+41    </application>
+42
+43</manifest>

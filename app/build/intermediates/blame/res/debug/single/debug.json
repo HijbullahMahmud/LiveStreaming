@@ -28,6 +28,14 @@
         "source": "E:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "E:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_channel_item.xml.flat",
+        "source": "E:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\src\\main\\res\\layout\\channel_item.xml"
+    },
+    {
+        "merged": "E:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "E:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
         "merged": "E:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "E:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
