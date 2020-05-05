@@ -187,6 +187,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         setContentView(R.layout.activity_main);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //get url
         streamUrl = getIntent().getStringExtra("streamUrl");

@@ -18,6 +18,7 @@
         android:text="Channel Name"
         android:textSize="@dimen/_25sdp"
         android:padding="@dimen/_5sdp"
-        android:layout_below="@id/view1"/>
+        android:layout_below="@id/view1"
+        android:textColor="@color/colorPrimary"/>
 
 </RelativeLayout>
