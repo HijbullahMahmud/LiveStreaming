@@ -192,6 +192,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //get url
         streamUrl = getIntent().getStringExtra("streamUrl");
+        //streamUrl = "https://m-c01-j2apps.s.llnwi.net/live_hd/0306.9XM.in_480p/index.m3u8";
 
         frameLayout = (FrameLayout) findViewById(R.id.frame_layout_main);
         tvPlaybackSpeed = (TextView) findViewById(R.id.tv_play_back_speed);
@@ -228,10 +229,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         setProgress();
-
-
-       
-
 
     }
 
@@ -443,8 +440,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         playerView.setPlaybackPreparer(this);
 
         //mediaSource = buildMediaSource(Uri.parse("http://13.127.14.184/adaptive/bigbunny/playlist.m3u8"));
-        //star sports
-        //mediaSource = buildMediaSource(Uri.parse("http://103.58.73.26/streams/116/index.m3u8"));
+
         mediaSource = buildMediaSource(Uri.parse(streamUrl));
 
         player.prepare(mediaSource);
@@ -462,15 +458,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @C.ContentType int type = Util.inferContentType(uri, overrideExtension);
         switch (type) {
             case C.TYPE_DASH:
+                Log.e("SourceType", "Dash");
                 return new DashMediaSource.Factory(dataSourceFactory)
                         .createMediaSource(uri);
             case C.TYPE_SS:
+                Log.e("SourceType", "SS");
                 return new SsMediaSource.Factory(dataSourceFactory)
                         .createMediaSource(uri);
             case C.TYPE_HLS:
+                Log.e("SourceType", "HLS");
                 return new HlsMediaSource.Factory(dataSourceFactory)
                         .createMediaSource(uri);
             case C.TYPE_OTHER:
+                Log.e("SourceType", "Other");
                 return new ExtractorMediaSource.Factory(dataSourceFactory).createMediaSource(uri);
             default: {
                 throw new IllegalStateException("Unsupported type: " + type);
