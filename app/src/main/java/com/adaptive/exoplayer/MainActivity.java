@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //get url
         streamUrl = getIntent().getStringExtra("streamUrl");
-        //streamUrl = "http://ddn.amrbd.com:8081/live/sangeetbangla/playlist.m3u8";
+        //streamUrl = "http://103.205.133.42:1935/live/somoy_tv_720/index.m3u8";
 
         frameLayout = (FrameLayout) findViewById(R.id.frame_layout_main);
         tvPlaybackSpeed = (TextView) findViewById(R.id.tv_play_back_speed);

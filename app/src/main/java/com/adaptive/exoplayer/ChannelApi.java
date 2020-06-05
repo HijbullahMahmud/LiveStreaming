@@ -6,10 +6,13 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface ChannelApi {
-    //-/raw/master/bdix/amrbd
-    /*@GET("-/raw/master/bdix/bdix_iptv_gallery")
-    Call<List<Channel>> getAllChannels();*/
+    //-/raw/master/bdix/bdix_iptv_gallery
+    //-/raw/master/bdix/amrbd         good
+    //-/raw/master/bdix/anytvlive
+    //-/raw/master/bdix/bangla_iptv
+    //-/raw/master/bdix/bangla_tv
 
-    @GET("-/raw/master/bdix/amrbd")
+
+    @GET("-/raw/master/bdix/anytvlive")
     Call<List<Channel>> getAllChannels();
 }
