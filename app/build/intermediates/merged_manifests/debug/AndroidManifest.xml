@@ -23,10 +23,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity
-            android:name="com.adaptive.exoplayer.HomeActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:windowSoftInputMode="stateHidden" >
+        <activity android:name="com.adaptive.exoplayer.bangla_tv.ChannelListActivity" />
+        <activity android:name="com.adaptive.exoplayer.bangla_tv.BanglaTvActivity" />
+        <activity android:name="com.adaptive.exoplayer.ServerChooserActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,10 +33,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.adaptive.exoplayer.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
             android:name="com.adaptive.exoplayer.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>

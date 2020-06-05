@@ -2345,8 +2345,10 @@ id add
 id alertTitle
 id all
 id always
+id aos_tv
 id async
 id auto
+id bangla_tv
 id barrier
 id beginning
 id blocking
@@ -2354,6 +2356,8 @@ id bottom
 id buttonPanel
 id cancel_action
 id cancel_button
+id cat_image
+id cat_name
 id center
 id center_horizontal
 id center_vertical
@@ -2440,6 +2444,7 @@ id give_us_a_review_landmine_button
 id give_us_a_review_landmine_main_layout
 id give_us_a_review_landmine_text_1
 id give_us_a_review_landmine_text_2
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -2696,8 +2701,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_bangla_tv
+layout activity_channel_list
 layout activity_home
 layout activity_main
+layout activity_server_chooser
+layout category_item
 layout channel_item
 layout custom_dialog
 layout design_bottom_navigation_item

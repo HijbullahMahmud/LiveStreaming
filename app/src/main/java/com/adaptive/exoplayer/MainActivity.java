@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //get url
         streamUrl = getIntent().getStringExtra("streamUrl");
-        //streamUrl = "https://m-c01-j2apps.s.llnwi.net/live_hd/0306.9XM.in_480p/index.m3u8";
+        //streamUrl = "http://103.205.133.19:80/hls/ekatoortv.m3u8?banglatvbkash";
 
         frameLayout = (FrameLayout) findViewById(R.id.frame_layout_main);
         tvPlaybackSpeed = (TextView) findViewById(R.id.tv_play_back_speed);
@@ -439,7 +439,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         playerView.setPlayer(player);
         playerView.setPlaybackPreparer(this);
 
-        //mediaSource = buildMediaSource(Uri.parse("http://13.127.14.184/adaptive/bigbunny/playlist.m3u8"));
+       // mediaSource = buildMediaSource(Uri.parse("http://13.127.14.184/adaptive/bigbunny/playlist.m3u8"));
 
         mediaSource = buildMediaSource(Uri.parse(streamUrl));
 

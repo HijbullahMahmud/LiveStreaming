@@ -51,7 +51,7 @@ public class App extends Application {
 
     /** Returns whether extension renderers should be used. */
     public boolean useExtensionRenderers() {
-        return "withExtensions".equals(BuildConfig.FLAVOR);
+        return "withExtensions".equals(BuildConfig.BUILD_TYPE);
     }
 
 

@@ -1,4 +1,4 @@
-#Tue May 12 10:48:42 BDT 2020
-base.0=E\:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+#Fri Jun 05 14:27:37 BDT 2020
+base.0=E\:\\Android Workspace\\AdaptiveStreamingExoplayer\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
